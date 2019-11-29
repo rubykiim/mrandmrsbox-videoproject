@@ -1,0 +1,195 @@
+html {
+  height: 100%;
+  background-image: url("../images/bg-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    animation: fadeIn 1.7s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fold_game {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(-50%,-50%) skewY(0deg) rotateY(0deg);
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/game.png");
+    background-size: cover;
+    background-position: -145px 0;
+    border-top: 5px solid #ffcdd4;
+    border-bottom: 5px solid #ffcdd4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.fold_game:hover {
+    transform: translate(-50%,-50%) skewY(-5deg) rotateY(3deg);
+}
+.fold_game:before {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: calc(100% + 10px);
+    background-image: url("../images/game.png");
+    background-size: cover;
+    background-position: -69px 0;
+    position: absolute;
+    top: -5px;
+    left: -25%;
+    box-sizing: border-box;
+    border-top: 5px solid #ffcdd4;
+    border-bottom: 5px solid #ffcdd4;
+    border-left: 5px solid #ffcdd4;
+    border-radius: 10px;
+    transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+    transform-origin: right;
+    box-shadow: inset -15px 0 15px rgba(0,0,0,.1);
+    transition: 1s;
+}
+.fold_game:hover:before {
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+.fold_game:after {
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: calc(100% + 10px);
+    top: -5px;
+    right: -25%;
+    background-image: url("../images/game.png");
+    background-size: cover;
+    background-position: 72px 0;
+    border-top: 5px solid #ffcdd4;
+    border-bottom: 5px solid #ffcdd4;
+    border-right: 5px solid #ffcdd4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+    transform-origin: left;
+    box-shadow: inset 15px 0 15px rgba(0,0,0,.1);
+    transition: 1s;
+}
+.fold_game:hover:after {
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+
+.fold_fm {
+    position: absolute;
+    top: 50%;
+    left: 68%;
+    transform: translate(-50%,-50%) skewY(0deg) rotateY(0deg);
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/fm.png");
+    background-size: cover;
+    background-position: center;
+    border-top: 5px solid #ffcdd4;
+    border-bottom: 5px solid #ffcdd4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transition: 1s;
+}
+.fold_fm:hover
+{
+    transform: translate(-50%,-50%) skewY(-5deg) rotateY(3deg);
+}
+.fold_fm:before
+{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: calc(100% + 10px);
+    background-image: url("../images/fm.png");
+    background-size: cover;
+    background-position: -33px 0;
+    position: absolute;
+    top: -5px;
+    left: -25%;
+    box-sizing: border-box;
+    border-top: 5px solid #ffcdd4;
+    border-bottom: 5px solid #ffcdd4;
+    border-left: 5px solid #ffcdd4;
+    border-radius: 10px;
+    transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+    transform-origin: right;
+    box-shadow: inset -15px 0 15px rgba(0,0,0,.1);
+    transition: 1s;
+}
+.fold_fm:hover:before
+{
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+.fold_fm:after
+{
+    content: '';
+    position: absolute;
+    width: 25%;
+    height: calc(100% + 10px);
+    top: -5px;
+    right: -25%;
+    background-image: url("../images/fm.png");
+    background-size: cover;
+    background-position: 70px 8px;
+    border-top: 5px solid #ffcdd4;
+    border-bottom: 5px solid #ffcdd4;
+    border-right: 5px solid #ffcdd4;
+    border-radius: 10px;
+    box-sizing: border-box;
+    transform: perspective(1000px) skewY(-25deg) rotateY(-90deg);
+    transform-origin: left;
+    box-shadow: inset 15px 0 15px rgba(0,0,0,.1);
+    transition: 1s;
+}
+.fold_fm:hover:after
+{
+    transform: perspective(1000px) skewY(-25deg) rotateY(0deg);
+}
+
+#previous {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transition: transform 1.0s ease;
+}
+
+#previous:hover {
+  transform: scale(1.8);
+}
+
+.word {
+  position: absolute;
+  top: 10%;
+  left: 21%;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+  font-style: black;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  position: relative;
+  top: 305px;
+  margin: 0;
+  width: 300px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 25px;
+  font-style: black;
+}

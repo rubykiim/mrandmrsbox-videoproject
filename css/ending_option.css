@@ -1,0 +1,103 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  background-color: #f9ece1;
+}
+
+body {
+  animation: fadeIn 1.7s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#game,#fm,#movie,#park,#commlab {
+  width: 230px;
+  height: 230px;
+  border-radius: 15px;
+  opacity: 0.8;
+}
+
+.boy,.girl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.boy {
+  position: relative;
+  top: 18%;
+}
+
+.girl{
+  position: relative;
+  top: 28%;
+}
+
+#game, #movie, #park {
+  margin-right: 60px;
+}
+
+#game {
+  background-color:	#92a8d1;
+}
+
+#fm {
+  background-color:	#c5b9cd;
+}
+
+#movie {
+  background-color:	#f7cac9;
+}
+
+#park {
+  background-color:	#eaa8b3;
+}
+
+#commlab {
+  background-color: #dd869c;
+}
+
+#e-game,#e-fm,#e-movie,#e-park,#e-commlab {
+  width: 80%;
+  height: 80%;
+  position: relative;
+  left: 10%;
+  top: 8%;
+}
+
+#previous {
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  transition: transform 1.0s ease;
+}
+
+#previous:hover {
+  transform: scale(1.8);
+}
+
+.word {
+  position: absolute;
+  top: 2%;
+  left: 27%;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 40px;
+  font-style: black;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  margin: 0;
+  width: 230px;
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 25px;
+  font-style: black;
+}

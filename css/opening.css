@@ -1,0 +1,29 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+#heartbutton {
+  width: 25%;
+  height: 40%;
+  position: absolute;
+  top: 30%;
+  left: 38%;
+}
+
+body {
+  animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
